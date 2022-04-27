@@ -209,7 +209,7 @@ async def stop_cmd(_, message):
                 ctitle = await CHAT_TITLE(ctitle)
                 f2 = open(f'search/{afk}id.txt', 'r')        
                 userid =(f2.read())
-                thumb = await gen_thumb(thumbnail, title, userid, theme, ctitle)
+                thumb = await gen_thumb(vidid)
                 user_id = userid
                 buttons = play_markup(videoid, user_id)
                 await mystic.delete()
